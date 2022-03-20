@@ -1,3 +1,138 @@
 @import 'tailwindcss/dist/base.css';
 @import 'tailwindcss/dist/components.css';
 @import 'tailwindcss/dist/utilities.css';
+
+:root {
+    --primary-color: #06FF00;
+    --secondary-color: #FFE400;
+    --tertiary-color: #FF8E00;
+    --alpha-color: #F1FAA5;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: rgb(215, 240, 250);
+}
+
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+.app {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: space-around;
+    column-gap: 2rem;
+    align-content: space-around;
+}
+
+.main-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #00115e;
+}
+
+.main-title:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    padding-bottom: 5rem;
+    /* border: #e8f804 5px solid; */
+    border-radius: 20px;
+    background-color: var(--tertiary-color);
+}
+
+.container__img{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    padding: 2rem 2rem;
+    align-items: center;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+}
+
+.container__img:hover {
+    background-color: var(--alpha-color);
+    cursor: pointer;
+}
+
+.container__img-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #00115e;
+    font-weight: 800;
+    font-size: 2rem;
+    width: 100%;
+    height: 6rem;
+    background-color:  var(--alpha-color);
+}
+.container__price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    width: 25rem;
+    height: 4rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #FFFFFF;
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.container__price:hover {
+    background-color: var(--alpha-color);
+    width: 28rem;
+    color: #00115e;
+}
+
+.footer {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    height: 8rem;
+    width: 100%;
+}
+
+.footer__items {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #00115e;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.footer__items > li {
+    list-style: none;
+}
+
+.footer__items > li a {
+    font-weight: 600;
+    padding-right: 0.3rem;
+}
+
+.footer__items > li a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
