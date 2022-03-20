@@ -58,5 +58,3 @@ window.fetch(`${baseUrl}/api/avo`)
         })
     })
 
-
-console.log('Happy hacking :) ---')
